@@ -2,7 +2,7 @@
 
 /* Estilos para o cabeçalho */
 header {
-    background-image: url('https://images.unsplash.com/photo-1566419808810-658178380987?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho real para sua imagem de fundo */
+    background-image: url('https://cdn.pixabay.com/photo/2020/04/18/22/14/nature-5061217_1280.jpg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho real para sua imagem de fundo */
     background-size: cover; /* Isso garante que a imagem cubra todo o cabeçalho */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
@@ -13,7 +13,7 @@ header {
 
 h1 {
     color: #ffffff; /* Cor do texto */
-    font-size: 75px; /* Tamanho da fonte */
+    font-size: 95px; /* Tamanho da fonte */
     margin-bottom: 30px; /* Margem inferior */
     /* Adicione mais estilos conforme necessário */
 }
@@ -56,21 +56,33 @@ img {
     padding: 5px;
     width: 150px;
 }
-
 .imagem1 {
-    /* ... outras propriedades ... */
-    float: none; /* Remove a flutuação */
     display: flex; /* Ativa o layout flexbox */
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
-  }
+    height: 50px; /* Ajuste para a altura desejada */
+    width: auto; /* Mantém a proporção da largura */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor da imagem */
+    background-color: #116104;
+    padding: 0; /* Espaçamento interno na imagem */
+    margin-right: 0; /* Adiciona um espaçamento à direita da imagem */
+}
+
+.container-imagem1, .imagem2, .imagem3 {
+    width: 50px; /* Ajuste a largura dos ícones */
+    height: 50px; /* Ajuste a altura dos ícones */
+    background-color: #4CAF50; /* Cor de fundo dos ícones */
+    border-radius: 50%; /* Bordas arredondadas para os ícones */
+    margin-right: 10px; /* Ajuste o espaçamento entre os ícones */
+}
 
 .container-imagem1 {
     display: flex; /* Ativa o layout flexbox */
     flex-direction: row; /* Alinha os itens na horizontal */
     align-items: center; /* Centraliza verticalmente */
     justify-content: space-between; /* Distribui o espaço entre os itens */
-    gap: 0px; /* Adiciona espaço entre os itens */
+    gap: 0; /* Adiciona espaço entre os itens */
 }
 
 .container-imagens {
@@ -80,38 +92,7 @@ img {
     justify-content: space-between;
     gap: 10px;
 }
-  
-.imagem1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: auto; /* Ajuste a largura conforme necessário */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #116104;
-    padding: 10px;
-}
-  
-.container-imagem1, .imagem2 , .imagem3  {
-    /* Estilos para os ícones */
-    width: 50px; /* Ajuste a largura dos ícones */
-    height: 50px; /* Ajuste a altura dos ícones */
-    background-color: #4CAF50; /* Cor de fundo dos ícones */
-    border-radius: 50%; /* Bordas arredondadas para os ícones */
-    margin-right: 10px; /* Ajuste o espaçamento entre os ícones */
-}
-  
-.imagem1 {
-    height: 50px;              /* Ajuste para a altura desejada */
-    width: auto;               /* Mantém a proporção da largura */
-    border-radius: 8px;        /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor da imagem */
-    
-    padding: 0px;              /* Espaçamento interno na imagem */
-    float: center;             /* Faz a imagem flutuar para a esquerda */
-    margin-right: 0px;         /* Adiciona um espaçamento à direita da imagem */
-}
+
 
 img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
@@ -150,11 +131,10 @@ body{
 }
 
 h1 {
-    font-family: "Playball", cursive;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Lobster", sans-serif;
+    font-weight: 900; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
 }
-
 h3 {
     color: #333; /* Cor do texto */
     font-size: 27px; /* Tamanho da fonte */
